@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,41 +15,45 @@
     <title>Document</title>
   </head>
 
-  <body>
-    <header>
-      <a href="./index.html"> <span class="logo1">Web</span><span class="logo2">studio</span></a>
-      <nav>
-        <ul class="portfolio-info">
+  <body class="container">
+        <header>
+      <a class="container-logo"  href="./index.html"> 
+        <span class="logo1">Web</span>
+        <span class="logo2">studio</span>
+      </a>
+      <nav class="list-first">
+        <ul class="list-link-first">
           <li>
-            <a class="link" href="./agencja"><strong>Agencja</strong></a>
+            <a class="link-agency" href="./agencja"><strong>Agencja</strong></a>
           </li>
           <li>
-            <a class="link" href="./index.html"><strong>Portfolio</strong></a>
+            <a class="link-portfolio" href="./portfolio.html"><strong>Portfolio</strong></a>
           </li>
           <li>
-            <a class="link" href="./kontakt"><strong>Kontakt</strong> </a>
+            <a class="link-contact" href="./kontakt"><strong>Kontakt</strong> </a>
           </li>
         </ul>
       </nav>
       <div>
-        <ul class="portfolio-info-second">
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <ul class="list-link-second">
+          <li><a class="link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li>
-            <a class="link"> +48 111 111 111</a>
+            <a class="link-tel"> +48 111 111 111</a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <div class="wrapper" style="color: white">
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNEZU</h1>
-        <button class="dokument-button" type="button">Zamów usługe</button>
-      </div>
+      <div  style="color: white">
+      <ul class="wrapper">
+      <li><h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNEZU</h1><li>
+      <li> <button class="dokument-button" type="button">Zamów usługe</button></li>
+     </li></ul> </div>
 
-      <section>
-        <ul>
-          <li>
+<section class="container-lorem">
+        <ul class="container-set" >
+          <li class="container-item">
             <h4>LOREM IPSUM</h4>
 
             <p>
@@ -57,7 +62,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="container-item" >
             <h4>LOREM IPSUM</h4>
 
             <p>
@@ -65,7 +70,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="container-item" >
             <h4>LOREM IPSUM</h4>
 
             <p>
@@ -73,7 +78,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="container-item" >
             <h4>LOREM IPSUM</h4>
 
             <p>
@@ -84,10 +89,10 @@
         </ul>
       </section>
 
-      <div class="wrapper-2">
+      
         <section>
           <h2>Czym się zajmujemy</h2>
-          <ul>
+          <ul class="wrapper-2">
             <li>
               <img
                 src="./images/pisanie_na_klawiaturze.jpg"
@@ -116,11 +121,11 @@
         </section>
       </div>
 
-      <section class="team">
+      <section class="section-team">
         <h2>Nasz Zespół</h2>
-        <ul>
-          <li>
-            <a>
+        <ul class="team">
+          <li class="team-list">
+             <div><a>
               <img
                 src="./images/młody_mężczyzna_w_brązowej_koszuli.jpg"
                 alt="mężczyzna z laptopem"
@@ -128,11 +133,11 @@
                 height="260"
             /></a>
             <p><strong>John Doe</strong></p>
-            <p>Product Designer</p>
+            <p>Product Designer</p></div>
           </li>
 
-          <li>
-            <a>
+          <li class="team-list">
+            <div><a>
               <img
                 src="./images/uśmiechnięta_blondynka.jpg"
                 alt="uśmiechnięta kobieta"
@@ -140,11 +145,11 @@
                 height="260"
             /></a>
             <p><strong>John Doe</strong></p>
-            <p>Frontend Designer</p>
+            <p>Frontend Designer</p></div>
           </li>
 
-          <li>
-            <a>
+          <li class="team-list">
+            <div><a>
               <img
                 src="./images/szczupły_mężczyzna.jpg"
                 alt="mężczyzna patrzący w bok"
@@ -152,41 +157,41 @@
                 height="260"
             /></a>
             <p><strong>John Doe</strong></p>
-            <p>Marketing</p>
+            <p>Marketing</p></div>
           </li>
 
-          <li>
-            <a>
+          <li class="team-list">
+           <div> <a>
               <img
-                src="images/mężczyzna_z_tatuażami.jpg"
+                src="./images/mężczyzna_z_tatuażami.jpg"
                 alt="mężczyzna w okularach"
                 width="270"
                 height="260"
             /></a>
             <p><strong>John Doe</strong></p>
-            <p>Ul Designer</p>
+            <p>Ul Designer</p></div>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer class="footer-down">
-      <address>
-        <ul>
-          <li>
+    <footer class="footer-down ">
+      <address class-="address">
+        <ul class="footer-list">
+          <li class="logo-footer">
             <a href="./index.html">
-              <span class="logo1">Web</span
-              ><span style="color: white" class="logo2">Studio</span></a
+              <span class="logo3">Web</span
+              ><span style="color: white" class="logo4">Studio</span></a
             >
           </li>
           <li>
-            <div class="leter-style1"><p>m. Warszawa, Aleje Jerozolimskie 21</p></div>
+            <div style="font-style: normal;"   class="leter-style1 size"><p>m. Warszawa, Aleje Jerozolimskie 21</p></div>
           </li>
           <li>
-            <div class="letter-style2"><a href="mailto:info@example.com">info@example.com</a></div>
+            <div class="letter-style2 size"><a class="color-mail"  href="mailto:info@example.com">info@example.com</a></div>
           </li>
           <li>
-            <div class="letter-style3"><p>+48 111 111 111</p></div>
+            <div class="letter-style3 size"><p>+48 111 111 111</p></div>
           </li>
         </ul>
       </address>
